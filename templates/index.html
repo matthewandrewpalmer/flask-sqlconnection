@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Homepage</title>
+</head>
+<body>
+<h1>Hello</h1>
+<p>This is a website</p>
+
+
+<h2>students</h2>
+<p>{{ msg }}</p>
+
+
+<table style=" width:75%" class = "duckTable">
+
+    <tr>
+        <th>firstName</th>
+        <th>surname</th>
+        <th>mobileNumber</th>
+    </tr>
+    <!-- Loops through the provided dictionary to fill in values into the table -->
+    {% for student in list %}
+
+    <tr>
+        <td> {{ student.firstName }}</td>
+        <td> {{ student.surname }}</td>
+        <td> {{ student.mobileNumber }} </td>
+    </tr>
+
+    <!-- Ending loop -->
+
+    {% endfor %}
+
+
+
+</body>
+</html>
