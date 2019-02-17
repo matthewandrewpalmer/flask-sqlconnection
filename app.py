@@ -68,10 +68,10 @@ def getHome():
     data = cursor.fetchall()
 
     for student in  data:
-        print(student[1])
         newStudent = Student(student[1], student[2], student[3])
         studentList.append(newStudent)
     return render_template(homepage, list = studentList)
+
 
 
 # =================== Server startup ===================
